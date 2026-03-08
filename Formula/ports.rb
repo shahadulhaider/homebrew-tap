@@ -11,7 +11,7 @@ class Ports < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/shahadulhaider/ports/releases/download/v1.0.0/ports_1.0.0_darwin_amd64.tar.gz"
-      sha256 "cdfe939c7d6aa7906e379c6c9f78fc70fabb07e35c6a6456cbfe7022cf841439"
+      sha256 "e2541197e25d77dc109ab6a2a1e6b450199e428e3959586ed7109003388d5eeb"
 
       define_method(:install) do
         bin.install "ports"
@@ -19,7 +19,7 @@ class Ports < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/shahadulhaider/ports/releases/download/v1.0.0/ports_1.0.0_darwin_arm64.tar.gz"
-      sha256 "9d3ec3d2a6a4ac86c527f33d071c0afc37c45cc16fbd9615b37edd2def50b95e"
+      sha256 "96f7dbbffce976aa1511f7056a3bf51c55fa49db78260efd82df45f82c4bce29"
 
       define_method(:install) do
         bin.install "ports"
@@ -30,14 +30,14 @@ class Ports < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/shahadulhaider/ports/releases/download/v1.0.0/ports_1.0.0_linux_amd64.tar.gz"
-      sha256 "56bbe932a704bc53892309f5f49bf26e022ff16ad5bec1bcbc01ff2ebcf156c3"
+      sha256 "96b1387430e45fa2905484aa366869128c3242122d38674c7b26d2b6002c7a03"
       define_method(:install) do
         bin.install "ports"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/shahadulhaider/ports/releases/download/v1.0.0/ports_1.0.0_linux_arm64.tar.gz"
-      sha256 "fcfb2ac784afbe2ec67d4484bd23115d327bb153d3a448a0f13933777a418676"
+      sha256 "13e4ff787cdd04808fdffb867136ce42b333c6ba095ec81207e5337b8dba552f"
       define_method(:install) do
         bin.install "ports"
       end
