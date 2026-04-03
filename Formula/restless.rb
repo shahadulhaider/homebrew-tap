@@ -5,21 +5,21 @@
 class Restless < Formula
   desc "Terminal-native HTTP client using .http files with TUI and headless CLI"
   homepage "https://github.com/shahadulhaider/restless"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shahadulhaider/restless/releases/download/v0.1.0/restless_0.1.0_darwin_amd64.tar.gz"
-      sha256 "d8c382749f804e8f2a9761d2bc952fea747d6a81153f6033d7b988f729412a43"
+      url "https://github.com/shahadulhaider/restless/releases/download/v0.2.0/restless_0.2.0_darwin_amd64.tar.gz"
+      sha256 "fc5caf3492426be26ca5afdfce5b9bbae89adb31a001b1758e7c620b08228dda"
 
       define_method(:install) do
         bin.install "restless"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shahadulhaider/restless/releases/download/v0.1.0/restless_0.1.0_darwin_arm64.tar.gz"
-      sha256 "77512e33d5f5655eb44b96531b820065a05bc2e5234f6df282b8bd9a9f60fec1"
+      url "https://github.com/shahadulhaider/restless/releases/download/v0.2.0/restless_0.2.0_darwin_arm64.tar.gz"
+      sha256 "211a38c3bda6f2fdaa070791859213f17fe12bdb7d277a2c5b99633c9f355487"
 
       define_method(:install) do
         bin.install "restless"
@@ -29,15 +29,15 @@ class Restless < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shahadulhaider/restless/releases/download/v0.1.0/restless_0.1.0_linux_amd64.tar.gz"
-      sha256 "152924f697583a99c6e2780f7a8ab48132911b6317951de625f2e26b87d93127"
+      url "https://github.com/shahadulhaider/restless/releases/download/v0.2.0/restless_0.2.0_linux_amd64.tar.gz"
+      sha256 "474625b2f65318c9dcd318648b2ac8a61f17e4794872a7dc12e068905d6f3693"
       define_method(:install) do
         bin.install "restless"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shahadulhaider/restless/releases/download/v0.1.0/restless_0.1.0_linux_arm64.tar.gz"
-      sha256 "38fba372bc35a7afb48eb726947c9b5281bffdfb678ec5589a1eec627c0a4d24"
+      url "https://github.com/shahadulhaider/restless/releases/download/v0.2.0/restless_0.2.0_linux_arm64.tar.gz"
+      sha256 "8d64bed9175fe44b12aad2c063199d2015a33754406b9c1bdafb6dd5f4480085"
       define_method(:install) do
         bin.install "restless"
       end
